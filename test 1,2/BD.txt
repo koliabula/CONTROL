@@ -1,0 +1,102 @@
+CREATE DATABASE IF NOT EXISTS Human_Friends;
+USE Human_Friends;
+
+CREATE TABLE dogs
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+CREATE TABLE cats
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+CREATE TABLE homster
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+CREATE TABLE hourses
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+CREATE TABLE camels
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+CREATE TABLE donkey
+(
+    name VARCHAR(45),
+    date DATE,
+    breed VARCHAR(45),
+    commands VARCHAR(45),
+    sound VARCHAR(45)
+);
+
+INSERT dogs
+VALUES
+	("Фингал", "2020-01-01", "пудель", "Сидеть " "Голос " "Принеси", "гав"),
+    ("Лайка", "2018-12-10", "лобрадор", "Сидеть " "Лежать " "Спи", "гав");
+    
+INSERT cats
+VALUES
+	("Мяука", "2019-05-15", "шотландский вислоух", "еда " "брысь ", "мяу"),
+    ("Рыжик", "2020-02-20", "ХЗ", "Лежать ", "мяу");
+    
+INSERT homster
+VALUES
+	("Хомка", "2019-01-23", "1", "прячься ", "хххххх"),
+    ("Ромка", "2017-09-18", "2", "спи ", "хххххх");
+    
+INSERT hourses
+VALUES
+	("Конь", "2016-02-29", "пони", "назад " "пошёл " "стой ", "и-го-го"),
+    ("Бубен", "2014-05-05", "мустанг", "назад " "пошёл " "стой " "бегом" , "и-го-го");
+    
+INSERT camels
+VALUES
+	("Горб", "2018-12-12", "1г", "пошёл " "стой " "пить ", "аааааааааааааа"),
+    ("2горба", "2015-08-14", "2г", "пошёл " "стой ", "аааааааааааааа");
+    
+INSERT donkey
+VALUES
+	("тормоз", "2019-01-23", "медленный", "пошёл " "стой ", "и-ааааааа"),
+    ("ушастый", "2017-09-18", "очень Медленный", "не ори", "и-ааааааа");
+    
+
+DROP TABLE camels;
+
+SELECT hourses.*, donkey.*
+FROM hourses, donkey;
+
+INSERT iNTO hourses (name, date, breed, commands, sound)
+SELECT name, date, breed, commands, sound
+FROM donkey;
+
+SELECT *
+FROM hourses;
+
+
+

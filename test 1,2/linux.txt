@@ -1,0 +1,23 @@
+
+1. Использование команды cat в Linux
+   
+
+2. Работа с директориями в Linux
+   - Создать новую директорию и переместить туда файл "Human Friends".
+
+3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
+   - Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+		
+		sudo apt-get update
+		sudo apt-get install mysql-server
+
+
+4. Управление deb-пакетами
+   - Установить и затем удалить deb-пакет, используя команду `dpkg`.
+	wget https://download.virtualbox.org/virtualbox/7.0.6/virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
+	dpkg -i virtualbox-7.0_7.0.6-155176~Ubuntu~jammy_amd64.deb
+	apt -f install
+	apt remove virtualbox-7.0 или dpkg -r virtualbox-7.0 (попробовал 2 варианта)
+
+
+
